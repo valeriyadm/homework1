@@ -1,0 +1,56 @@
+#task 1
+num =int(input('Введите цифру, обозначающую день недели(1-Понедельник,2-Вторник и т.д.)'))
+if 1 <= num <= 5:
+    print('NO')
+elif 5 <= num <= 7:
+    print('Yes')
+else :
+    print('Вы ввели неверное число')
+    
+    
+    #task 2
+    
+print ("x y z")
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            if not (x or  y or  z ) == (not x) and (not y) and (not z):
+                print (x,y,z)
+
+#task 3
+
+x = int(input('введите значение x'))
+y= int(input('введите значение y'))
+if x > 0 and y > 0 :
+    print ('Точка находится в первой четверти')
+elif x < 0 < y:
+    print ('Точка находится во второй четверти')
+elif x < 0 and y < 0:
+    print('Точка находится в третьей четверти')
+elif x > 0 > y:
+    print('Точка находится в четвертой четверти')
+elif x == 0 or y == 0:
+    print ('Введите число отличное от нуля')
+    
+    #task4
+ 
+quarter_coordinates = int(input('Введите номер четверти координат (от 1 до 4)'))
+if quarter_coordinates == 1:
+    print ('x > 0 and y > 0')
+elif quarter_coordinates == 2:
+    print(' x < 0 and y > 0')
+elif quarter_coordinates == 3:
+    print(' x < 0 and y < 0')
+elif quarter_coordinates == 4:
+    print ('x > 0 and y < 0')
+else:
+    print ('Вы ввели неверное числою Введите число от 1 до 4')
+    
+#task5
+x1 = int(input('введите значение x1'))
+y1= int(input('введите значение y1'))
+x2 = int(input('введите значение x2'))
+y2= int(input('введите значение y2'))
+distance = ((x2 - x1)**2 + (y2 - y1)**2)**1/2
+print('Расстояние между точками:',int(distance))
+
